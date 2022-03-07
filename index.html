@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+#particles-js {
+    margin-top: 100px;
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(45deg, #0ac8f8, #081866);
+    z-index: 9;
+}
+</head>
 <body>
+
 <div id="particles-js"></div>
 <script src="particles.js"></script>
+<script>
+    particlesJS.load('particles-js', 'particles.json',
+    function(){
+        console.log('particles.json loaded...')'
+    })
+</script>
+
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
